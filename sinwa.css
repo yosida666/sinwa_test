@@ -1,0 +1,326 @@
+body{
+	height: 100vh;
+}
+.slide {
+	position:relative;
+	height:400px;
+	width: 100vw;
+	
+}
+.slide img {
+	position:absolute;
+	opacity:0;
+	transition:all 1s ease-in-out;
+	height:100%;
+	width: 100%;
+	
+}
+p{
+	display: none;
+}
+.map{
+	margin-top: 150px;
+	width: 100%;
+	height: 100%;
+	font-family: serif;
+}
+iframe{
+	width: 100%;
+	height: 300px;
+    padding-top: 10px;
+}
+main{
+	margin: 0;
+	display: flex;
+	flex: 1;
+}
+a{
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	font-family: '游明朝';
+}
+a:hover{
+	color: rgb(214, 190, 154);
+}
+li{
+	list-style: none;
+	margin: 0;
+	width: 100%;
+	background: linear-gradient(to left, #6b6b69,#1b1d1b);
+	border: solid black 1px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	flex: 1;
+}
+aside{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+footer{
+	flex: 1;
+}
+.main{
+	height: 100%;
+}
+.sinwa {
+	display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #2c0c85 0%, #648e9b 100%);
+  transition: .4s;
+  pointer-events: none;
+  border: none;
+  font-size: 13px;
+  position: absolute;
+  right: 3%;
+  top: 10%;
+  }
+  .slideMessage{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	pointer-events: none;
+	border: none;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 37px;
+	color: #eaebee;
+	text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+  }
+  h4{
+	  margin-top: -20px;
+  }
+  .message{
+	  text-align: center;font-family: serif;
+  }
+h2{
+	text-align: center;
+}
+
+
+.maincontainer{
+	display: flex;
+	width: 50vw;
+	margin-left: 18%;
+	margin-top: 5%;
+}
+.left{
+    flex: 1;
+	height: 100%;
+}
+.left,.leftPhoto-1{
+	width: 100%;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.left,.leftPhoto-2{
+	width: 100%;
+	margin-right: 10px;
+}
+.right{
+    flex: 1;
+	height: 100%;
+}
+.right,.rightPhoto{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.open,.close{
+	display: none;
+}
+input[type="checkbox"]{
+	position: absolute;
+	left: -50vw;
+}
+.contentsBox{
+	height: 200px;
+	display: flex;
+	margin-top: 50px;
+}
+.boxTop{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+
+}
+.box1{
+	width: 30%;
+	background: red;
+	margin: 5px;
+	border-radius: 5px;
+}
+h4{
+	margin-top: 7%;
+	margin-left: 10%;
+}
+h6{
+	margin-top: -30%;
+    /* text-align: center; */
+    height: 70%;
+	padding-top: 20%;
+}
+
+.box2{
+	width: 30%;
+	background: yellow;
+	margin: 5px;
+	border-radius: 5px;
+}
+.boxBottom{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+}
+.box3{
+	width: 30%;
+	background: mediumblue;
+	margin: 5px;
+	border-radius: 5px;
+}
+.box4{
+	width: 30%;
+	background: green;
+	margin: 5px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 600px){
+	
+	.main{
+		width: 100%;
+		padding-top: 50px;
+	}
+	.open,.close{
+		display: block;
+	}
+	.open{
+		position: absolute;
+	}
+	aside{
+		position: absolute;
+		left: -250px;
+		height: 100%;
+		transition: all 0.4s;
+		background: #ffffff;
+		width: 50vw;
+	}
+	input[type="checkbox"]:checked ~ aside{
+		left: 0;
+	}
+	input[type="checkbox"]:checked ~ .back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	#humberger {
+		margin-top: 5px;
+		position: relative;
+		height: 24px;
+		width: 24px;
+		display: inline-block;
+		box-sizing: border-box;
+	  }
+	  #humberger div {
+		position: absolute;
+		left: 0;
+		height: 4px;
+		width: 24px;
+		background-color: #444;
+		border-radius: 2px;
+		display: inline-block;
+		box-sizing: border-box;
+	  }
+	  #humberger div:nth-of-type(1) {
+		top: 0;
+	  }
+	  #humberger div:nth-of-type(2) {
+		top: 10px;
+	  }
+	  #humberger div:nth-of-type(3) {
+		bottom: 0;
+	  }
+	  .slide{
+		  height:400px;
+	  }
+	  .slide img{
+		object-fit:cover;
+		height: 400px;
+	  }
+	  .message{
+		  font-size: 0.8rem;
+	  }
+	  .sinwa{
+		position: absolute;
+		right: 3%;
+		top: 15%;
+		font-size: 9px;
+	  }
+	  .map{
+		  margin-top: 50px;
+	  }
+	  .maincontainer{
+		display: flex;
+		height: 100%;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10%;
+		padding: 0;
+	}
+	.left{
+		flex: 1;
+	}
+	.left,.leftPhoto-1{
+		width: 100%;		
+		margin-bottom: 1px;
+	}
+	.left,.leftPhoto-2{
+		width: 100%;		
+		margin-bottom: 1px;
+	}
+	.right{
+		flex: 1;	
+		height: 200px;
+	}
+	.right,.rightPhoto{
+		width: 100%;
+		height: 100%;
+	}
+	.contentsBox{
+        height: 400px;
+		flex-direction: column;
+		justify-content: center;
+		margin: 10px;
+	}
+	.boxTop{
+		justify-content: center;
+		width: 100%;
+
+	}
+	.boxBottom{
+        width: 100%;
+		justify-content: center;
+	}
+	.box1{width: 50%;}
+	.box2{width: 50%;}
+	.box3{width: 50%;}
+	.box4{width: 50%;}
+	.slideMessage{
+		font-size: 15px;
+		left: 5%;
+		top: 50%;
+	}
+}
